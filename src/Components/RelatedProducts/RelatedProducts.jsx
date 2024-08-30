@@ -46,7 +46,7 @@ function CustomArrows({ product }) {
             <Slider {...settings}>
                 {product.map((product, index) => {
                     return <div key={index} className="w-full border-2 mb-4 md:mb-0 max-w-sm mx-auto rounded-md  shadow-xl overflow-hidden">
-                        <div className="flex  items-end justify-end h-28 md:h-56 md:w-full w-28 mx-auto bg-cover bg-center " style={{ "backgroundImage": `url(${product.imageCover})` }}>
+                        <div className="flex  items-end justify-end h-28 md:h-56 md:w-[200px] lg:w-full w-24  mx-auto bg-cover bg-center " style={{ "backgroundImage": `url(${product.imageCover})` }}>
                             <button onClick={()=> addProductToCart(product._id, userToken)} className="p-1 md:p-2 rounded-full  bg-blue-600 text-white mx-3 md:mx-5 -mb-4 hover:bg-green-600 duration-200 focus:outline-none focus:bg-blue-500">
                                 <svg  className="h-4 md:h-5  w-4 md:w-5"  fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" stroke="currentColor"><path d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
                             </button>

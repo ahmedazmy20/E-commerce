@@ -26,14 +26,14 @@ export default function MainHomeSlider() {
     <div className='flex px-2'>
       <div className='w-3/4'>
         <Slider  {...settings} >
-          <img src={slid1} className='w-full h-[200px] md:h-[500px]' alt="" />
-          <img src={slid2} className='w-full h-[200px] md:h-[500px]' alt="" />
-          <img src={slid3} className='w-full h-[200px] md:h-[500px]' alt="" />
+          <img src={slid1} className='w-full h-[200px] md:h-[400px] lg:h-[500px]' alt="" />
+          <img src={slid2} className='w-full h-[200px] md:h-[400px] lg:h-[500px]' alt="" />
+          <img src={slid3} className='w-full h-[200px] md:h-[400px] lg:h-[500px]' alt="" />
         </Slider>
       </div>
       <div className='w-1/4  '>
-        <img src={slid4} className='w-full h-[100px] md:h-[250px] ' alt="" />
-        <img src={slid5} className='w-full h-[100px] md:h-[250px] ' alt="" />
+        <img src={slid4} className='w-full h-[100px] md:h-[200px] lg:h-[250px] ' alt="" />
+        <img src={slid5} className='w-full h-[100px] md:h-[200px] lg:h-[250px] ' alt="" />
       </div>
     </div>
   </>
