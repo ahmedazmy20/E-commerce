@@ -5,22 +5,22 @@ import * as Yup from 'yup'
 
 export default function ShippingAddress() {
     const [isloading, setIsloading] = useState(false)
- 
-    
+
+
     const initialValues = {
-        details: '6 tahreer streat',
-        phone: '01554191141',
-        city: 'Cairo'
+        details: '',
+        phone: '',
+        city: ''
     };
 
     const id = localStorage.getItem("id")
     async function onSubmit(values) {
         setIsloading(true)
-        await axios.post(`https://ecommerce.routemisr.com/api/v1/orders/checkout-session/${id}`, {shippingAddress: values} ,{
+        await axios.post(`https://ecommerce.routemisr.com/api/v1/orders/checkout-session/${id}`, { shippingAddress: values }, {
             headers: {
                 token: localStorage.getItem("token")
             },
-            params:{
+            params: {
                 url: 'http://localhost:5173'
             }
         }).then(({ data }) => {

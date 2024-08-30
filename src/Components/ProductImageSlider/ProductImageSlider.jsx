@@ -16,9 +16,9 @@ export default function ProductImageSlider({images}) {
     };
 
     return (
-        <Slider  {...settings}>
+        <Slider  {...settings} >
             {images?.map((img, index) => {
-                return <img key={index} src={img} className="  sm:ps-16  md:p-0 h-full w-full rounded-md max-w-lg mx-auto object-contain " alt="Nike Air" />
+                return <img key={index} src={img} className=" sm:ps-16  md:p-0 h-60 md:h-full w-full rounded-md max-w-lg mx-auto object-contain " alt="Nike Air" />
             }
             )}
         </Slider>

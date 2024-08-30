@@ -53,7 +53,7 @@ export default function ProductDetails() {
                         <h2 className='font-bold text-3xl italic'>Product Details <i className="fa-regular fa-pen-to-square ms-3 fa-shake"></i></h2>
                             <div className="md:flex md:items-center">
                                 
-                                <div className="w-full  m-10  md:w-3/12 lg:h-96 ">
+                                <div className="w-full    md:w-3/12 lg:h-96 ">
                                     <ProductImageSlider images={productDetails?.images} />
                                 </div>
 
