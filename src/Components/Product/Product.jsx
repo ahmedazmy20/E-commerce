@@ -22,7 +22,7 @@ export default function Product({ product }) {
                     <RatingStars rating={product.ratingsAverage} />
 
                     <div className="flex items-center justify-between flex-col md:flex-row ">
-                        <span className="text-3xl font-bold text-gray-900 dark:text-white">{product.price} <span className='text-xl font-medium'>EGP</span></span>
+                        <span className="md:text-3xl font-bold text-gray-900 dark:text-white">{product.price} <span className='text-lg  font-medium'>EGP</span></span>
                         <button onClick={() => addProductToCart(product._id, userToken)} className="text-white bg-blue-700 hover:bg-blue-800 focus:bg-green-500 focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-xs px-2 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 mb-4 md:mb-0">Add to cart</button>
                         <button onClick={() => addProductToWishlist(product._id)} className=" focus:text-red-600 fa-solid fa-heart fa-xl"></button>
                     </div>
