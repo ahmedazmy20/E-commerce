@@ -33,14 +33,12 @@ function CustomArrows({ product }) {
     const settings = {
         dots: true,
         infinite: true,
-        slidesToShow: 4,
+        slidesToShow: 3,
         slidesToScroll: 1,
         autoplay: true,
         speed: 1500,
         autoplaySpeed: 2000,
         cssEase: "linear",
-        nextArrow: <SampleNextArrow />,
-        prevArrow: <SamplePrevArrow />
     };
     return (
         <div className="mt-16 text-center rounded-lg border-2 ">
