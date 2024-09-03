@@ -7,7 +7,7 @@ import Slider from "react-slick";
 export default function CategoryHomeSlider() {
 
     var settings = {
-        dots: true,
+        dots: false,
         infinite: true,
         slidesToShow: 4,
         slidesToScroll: 1,
@@ -30,7 +30,7 @@ export default function CategoryHomeSlider() {
         <Slider  {...settings}>
             {data?.data.data.map((category, index) => <div key={index} className='my-5 p-2  '>
                 <img src={category.image} className="  lg:w-56  lg:h-[240px] md:w-54  md:h-[200px] w-full h-[90px]" alt="Nike Air" />
-                <h3 className='text-center line-clamp-1 md:line-clamp-2'>{category.name}</h3>
+                <h3 className='text-center line-clamp-1 md:line-clamp-2 md:me-24'>{category.name}</h3>
             </div>)}
         </Slider>
 

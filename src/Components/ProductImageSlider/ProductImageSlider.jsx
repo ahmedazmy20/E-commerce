@@ -5,7 +5,7 @@ import Slider from "react-slick";
 export default function ProductImageSlider({images}) {
 
     var settings = {
-        dots: true,
+        dots: false,
         infinite: true,
         speed: 500,
         slidesToShow: 1,
@@ -13,6 +13,8 @@ export default function ProductImageSlider({images}) {
         autoplay: true,
         autoplaySpeed: 1500,
         cssEase: "linear",
+        nextArrow: <></>,
+        prevArrow: <></>,
     };
 
     return (

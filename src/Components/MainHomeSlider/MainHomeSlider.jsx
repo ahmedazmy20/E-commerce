@@ -9,7 +9,7 @@ import Slider from 'react-slick';
 export default function MainHomeSlider() {
 
   var settings = {
-    dots: true,
+    dots: false,
     infinite: true,
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -17,21 +17,20 @@ export default function MainHomeSlider() {
     speed: 500,
     autoplaySpeed: 2000,
     cssEase: "linear",
+    nextArrow: <></>,
+    prevArrow: <></>,
   };
 
-
-
-  
   return (<>
     <div className='flex px-2'>
-      <div className='w-3/4'>
+      <div className='w-full px-4 md:px-0 md:w-3/4'>
         <Slider  {...settings} >
           <img src={slid1} className='w-full h-[200px] md:h-[400px] lg:h-[500px]' alt="" />
           <img src={slid2} className='w-full h-[200px] md:h-[400px] lg:h-[500px]' alt="" />
           <img src={slid3} className='w-full h-[200px] md:h-[400px] lg:h-[500px]' alt="" />
         </Slider>
       </div>
-      <div className='w-1/4  '>
+      <div className='w-0 md:w-1/4  '>
         <img src={slid4} className='w-full h-[100px] md:h-[200px] lg:h-[250px] ' alt="" />
         <img src={slid5} className='w-full h-[100px] md:h-[200px] lg:h-[250px] ' alt="" />
       </div>
